@@ -5,15 +5,14 @@ def seleciona_peca():
         if tabuleiro[linha_peca][coluna_peca] == "1" or tabuleiro[linha_peca][coluna_peca] == "11":
             return True
         else:
-            print("Oção invalida! \nEscolha Novamente!")
+            print("Opção invalida! \nEscolha Novamente!")
             return False
     else:
         if tabuleiro[linha_peca][coluna_peca] == "2" or tabuleiro[linha_peca][coluna_peca] == "22":
             return True
         else:
-            print("Oção invalida! \nEscolha Novamente!")
+            print("Opção invalida! \nEscolha Novamente!")
             return False
-
 
 def movimenta(linha_peca,coluna_peca):
     print()
@@ -95,14 +94,6 @@ def estado_inicial():
                 print("\033[;40m  \033[m",end="")
         print()
 
-def rodada(vez):
-    if vez == "Jog1":
-        rodada_Brancas+=1
-        return "Jog2"
-    elif vez == "Jog2":
-        rodada_Pretas +=1
-        return "Jog1"
-
 tabuleiro=[
         ["2","0","2","0","2","0","2","0"],
         ["0","2","0","2","0","2","0","2"],
@@ -114,7 +105,7 @@ tabuleiro=[
         ["0","1","0","1","0","1","0","1"]]
 
 
-vez="Jog1"
+vez="Jog"
 pecas_Pretas = []
 pecas_Brancas = []
 
